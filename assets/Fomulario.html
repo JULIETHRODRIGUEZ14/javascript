@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form method="post">
+    <label for="formulario"><strong> introduce tu nombre:</strong></label>
+    <input type="text" id="nombre" name="nombre" placeholder="ejem: julieth" autocomplete="on">
+<br>
+    <label for="formulario"><strong>introduce tu contraseña:</strong></label>
+    <input type="password" name="clave" maxlength="4">
+<br>
+<!-- RADIO BUTTON -->
+<br>
+<label for="ecivil"><strong>Indique su estado civil:</strong></label>
+<br>
+<input type="radio"checked name="ecivil"> Soltero
+<input type="radio"name="ecivil"> Casado
+<input type="radio"name="ecivil"> En una relacion
+<input type="radio"name="ecivil"> Viudo(a)
+<br>
+<!-- CHECK BOX -->
+<br>
+<label><strong>¿ Que te gusta hacer en tu tiempo libre?</strong></label>
+<br>
+<input type="checkbox" id="series" name="series">
+<label for="series"> Ver series</label>
+<input type="checkbox" id="jugar" name="jugar">
+<label for="jugar"> Jugar videojuegos</label>
+<input type="checkbox" id="deportes" name="deportes">
+<label for="deportes"> Hacer deporte</label>
+<br>
+<!-- SELECT OPTION -->
+<br>
+<label for="ciudad"><strong>¿En que ciudad vives?</strong></label>
+<select name="ciudad">
+    <option selected value="0"> Elige una ciudad</option>
+    <option value="1"> Bogota D.C</option>
+    <option value="2"> Medellin</option>
+    <option value="3"> Cali</option>
+</select>
+<br>
+<!-- SELECT OPTION GROUP -->
+<br>
+<label for="ciudad"><strong>¿En que ciudad vives?</strong</label>
+    <select name="ciudad">
+        <option selected value="0"> Elige una ciudad</option>
+        <optgroup label="Cundinamarca">
+            <option value="1">Bogota</option>
+            <option value="2">Chia</option>
+        </optgroup>
+        <optgroup label="Antioquia">
+            <option value="4">Medellin</option>
+            <option value="5">Envigado</option>
+        </optgroup>
+    </select>
+    <br>
+    <!-- HIDDEN Y FILE -->
+    <br>
+    <input type="hidden" name="oculto">
+    <label for="archivo">Sube aqui tu archivo</label>
+    <input type="file" name="archivo">
+    <br>
+    <!-- TEXT AREA -->
+    <br>
+    <label for="Observaciones"> Observaciones</label>
+    <textarea rows="3" cols="20" name="Observaciones" readonly></textarea>
+    <br>
+    <!-- INPUT NUEVOS HTML5 -->
+<br>
+<input type="url" placeholder="url">
+<br>
+<input type="tel" placeholder="telefono">
+<input type="number" name="numbero" max="5">
+    <!-- SUBMIT Y RESET -->
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Restablecer">
+    <br>
+<!-- INPUT NUEVOS HTML5 -->
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/////// RETO 5
+let numerodecuenta, nombrecuenta, saldoactual, estadodecuenta;
+
+ do{
+     nombre = prompt("ingrese su nombre: ");
+     numerodecuenta = prompt("ingrese el numero de la cuenta: ");
+     saldoactual = prompt("ingrese el saldo de la cuenta ");
+
+     if(saldoactual > 0){
+         alert("USTED ES ACREEDOR");
+     }else if (saldoactual - 0){
+         alert("SU CUENTA ESTA AL DIA");
+     }else if(saldoactual < 0){
+         alert("USTED ES DEUDOR");
+     }
+     estadodecuenta - document.write("el nombre y numero de la cuenta es \n" + cuenta + numerodecuenta + " el saldo actual es " + saldoactual);
+
+ }while (estadodecuenta)
+
+ ///////// RETO 6
+
+var vectoruno = [], vectordos = [],vectortres = [];
+  let tamano= prompt ("Elija el tamaño de los vectores");
+  for (var i=0; i<parseInt (tamano);i++){
+      var numero1= prompt(" Ingrese valor números del vector uno");
+      vectoruno.push (parseInt (numero1));
+  }
+  for (var i=0; i<parseInt (tamano);i++){
+      var numero2= prompt(" Ingrese valor números del vector dos");
+      vectordos.push (parseInt (numero2));
+  }
+  for (var i=0; i<parseInt (tamano);i++){
+      vectortres.push (parseInt (vectoruno [i])+parseInt (vectordos[i]));
+
+ }
